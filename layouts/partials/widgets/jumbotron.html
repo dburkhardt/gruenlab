@@ -1,0 +1,9 @@
+{{ $st := .page }}
+
+<div class="row">
+  <div class="col-12 text-center my-auto" style="padding-top: 30vh;">
+    <h1 class="jumbo-title">{{ $st.Params.title | markdownify }}<h1>
+    <h2 class="jumbo-subtitle">{{ $st.Params.subtitle | markdownify }}<h2>
+    {{ $st.Content | markdownify }}
+  </div>
+</div>

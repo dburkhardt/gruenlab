@@ -3,18 +3,23 @@
 # Any elements can be added in the body: https://wowchemy.com/docs/writing-markdown-latex/
 # Add more sections by duplicating this file and customizing to your requirements.
 
-widget: hero  # See https://wowchemy.com/docs/page-builder/
+widget: jumbotron  # See https://wowchemy.com/docs/page-builder/
 headless: true  # This file represents a page section.
 weight: 10  # Order that this section will appear.
-title: "Wowchemy Research Group"
-subtitle: ""
-hero_media: welcome.jpg
+title: "Gruen Laboratory"
+subtitle: "Unravelling the genetics of reading"
 design:
-  # Choose how many columns the section has. Valid values: 1 or 2.
-  columns: '1'
+  background:
+    image: heros/bike_group.color.jpeg
+    image_darken: 0.5
+    image_parallax: false
+    image_position: center
+    image_size: cover
+    image_blur: 3px
+    text_color_light: true
 advanced:
-  css_style:
+  css_style: "height: 100vh;" #56.25vw;"
   css_class:
 ---
 
-The Wowchemy Research Group has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+{{< button text="Learn more" >}}

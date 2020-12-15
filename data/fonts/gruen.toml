@@ -1,0 +1,11 @@
+# Font style metadata
+name = "Gruen"
+
+# Optional Google font URL
+google_fonts = "Work+Sans:100,200,500|Quattrocento+Sans:400,400italic,700|Roboto+Mono"
+
+# Font families
+heading_font = "Work Sans"
+body_font = "Quattrocento Sans"
+nav_font = "Quattrocento Sans"
+mono_font = "Roboto Mono"
