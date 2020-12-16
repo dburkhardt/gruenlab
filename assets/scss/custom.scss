@@ -10,6 +10,7 @@
 
 .dark .btn-primary {
   border: 2px solid #ffffff;
+  border-radius: 40px;
   background-color: transparent;
   color: #ffffff;
   padding: 14px 28px;
@@ -19,6 +20,9 @@
 
 .btn-primary:hover{
   background-color: #ffffff;
-  color: #63aaff;
+  color: #343a40;
+}
 
+section {
+  scroll-behavior: smooth;    /* <----- THE SECRET ---- */
 }

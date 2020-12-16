@@ -54,10 +54,6 @@
       {{/* Allow valid CSS positions including left, center, and right. */}}
       {{ $style_bg = printf "%sbackground-position: %s;" $style_bg . }}
     {{ end }}
-
-    {{ if $bg.image_blur }}
-      {{ $style_bg = printf "%sfilter: blur(%s);" $style_bg (string $bg.image_blur) }}
-    {{ end }}
   {{ end }}
 
   {{ with $st.Params.design.spacing.padding }}

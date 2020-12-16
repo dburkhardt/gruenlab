@@ -32,6 +32,7 @@ function getNavBarHeight() {
  * If it exists on current page, scroll to it responsively.
  * If `target` argument omitted (e.g. after event), assume it's the window's hash.
  */
+
 function scrollToAnchor(target, duration=600) {
   // If `target` is undefined or HashChangeEvent object, set it to window's hash.
   // Decode the hash as browsers can encode non-ASCII characters (e.g. Chinese symbols).

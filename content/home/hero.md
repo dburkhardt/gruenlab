@@ -22,4 +22,4 @@ advanced:
   css_class:
 ---
 
-{{< button text="Learn more" >}}
+{{< button text="Learn more" url="#about-us">}}
