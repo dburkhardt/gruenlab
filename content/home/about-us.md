@@ -16,18 +16,18 @@ subtitle:
 # - Add/remove as many `feature` blocks below as you like.
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
-- description: 90%
-  icon: r-project
-  icon_pack: fab
-  name: R
-- description: 100%
-  icon: chart-line
-  icon_pack: fas
-  name: Statistics
-- description: 10%
-  icon: camera-retro
-  icon_pack: fas
-  name: Photography
+- description: Developing a pre-symptomatic genetic screen for dyslexia
+  img: logos/lexinome_logo.jpg
+  name: New Haven Lexinome Project
+  url: http://yalenhlp.org/
+- description: Identifying variants that contribute to reading & math disability and ADHD
+  img: logos/manhattan.jpg
+  name: Human Genetics
+  url: /research#human-genetics
+- description: Combining neuroimaging with genomics to link genetics with behavior
+  img: logos/brain.jpg
+  name: Imaging Genetics
+  url: /research#imaging-genetics
 
 # Uncomment to use emoji icons.
 #- icon = ":smile:"

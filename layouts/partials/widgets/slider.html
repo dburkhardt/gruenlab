@@ -1,0 +1,48 @@
+
+{{ $ := .root }}
+{{ $page := .page }}
+{{ $hash_id := .hash_id }}
+
+<!-- Indicators -->
+<ol class="carousel-indicators">
+  {{ range $index, $item := $page.Params.item }}
+  <li data-target="#{{$hash_id}}" data-slide-to="{{$index}}" {{if eq $index 0}}class="active"{{end}}></li>
+  {{ end }}
+</ol>
+
+<!-- Carousel slides wrapper -->
+<div class="carousel-inner">
+  {{ range $index, $item := $page.Params.item }}
+  <div class="wg-hero dark carousel-item{{if eq $index 0}} active{{end}}" style="{{with $page.Params.height}}{{printf "height: %s;" . | safeCSS}}{{end}}
+    {{ if $item.overlay_color }}
+    background-color: {{ $item.overlay_color | default "transparent" }};
+    {{ end }}
+    {{ if $item.overlay_img }}
+    {{ $media_dir := $.Scratch.Get "media_dir" }}
+    background-image:
+    {{ if $item.overlay_filter }}linear-gradient(rgba(0, 0, 0, {{ $item.overlay_filter }}), rgba(0, 0, 0, {{ $item.overlay_filter }})), {{ end }}
+    url('{{ printf "%s/%s" $media_dir $item.overlay_img | absURL }}');
+    background-size: cover;background-position: center;
+    {{ end }}
+    ;">
+  </div>
+  {{ end }}
+</div>
+
+<div class="row slider-content">
+  <div class="col-12 text-center my-auto">
+    <h1 class="jumbo-title">{{ $page.Params.title | markdownify }}<h1>
+    <h2 class="jumbo-subtitle">{{ $page.Params.subtitle | markdownify }}<h2>
+    {{ $page.Content | markdownify }}
+  </div>
+</div>
+
+<!-- Left and right controls -->
+<a class="carousel-control-prev" href="#{{$hash_id}}" data-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#{{$hash_id}}" data-slide="next">
+  <span class="carousel-control-next-icon"></span>
+  <span class="sr-only">Next</span>
+</a>

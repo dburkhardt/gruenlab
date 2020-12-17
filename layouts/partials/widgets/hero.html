@@ -1,0 +1,9 @@
+{{ $st := .page }}
+
+<div class="row" style="height: 600px;">
+  <div class="col-12 my-auto" >
+    <h1 class="hero-title">{{ $st.Params.title | markdownify }}<h1>
+    <h2 class="hero-subtitle">{{ $st.Params.subtitle | markdownify }}<h2>
+    {{ $st.Content | markdownify }}
+  </div>
+</div>

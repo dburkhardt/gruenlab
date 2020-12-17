@@ -8,6 +8,14 @@
   font-weight: 200;
 }
 
+.hero-title{
+  font-size: 5rem;
+}
+
+.carousel-item {
+  filter: blur(3px);
+}
+
 .dark .btn-primary {
   border: 2px solid #ffffff;
   border-radius: 40px;
@@ -23,6 +31,23 @@
   color: #343a40;
 }
 
-section {
-  scroll-behavior: smooth;    /* <----- THE SECRET ---- */
+
+.slider-content {
+  position: absolute;
+  top: 0;
+  left: .5;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  z-index: 15;
+}
+
+.card:hover{
+  .card-title{
+    color: #63aaff;
+    transition-duration:0.25s;
+  }
 }

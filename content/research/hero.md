@@ -1,17 +1,16 @@
 ---
-# A Demo section created with the Blank widget.
 # Any elements can be added in the body: https://wowchemy.com/docs/writing-markdown-latex/
 # Add more sections by duplicating this file and customizing to your requirements.
 
-widget: jumbotron  # See https://wowchemy.com/docs/page-builder/
+widget: hero  # See https://wowchemy.com/docs/page-builder/
 headless: true  # This file represents a page section.
 weight: 10  # Order that this section will appear.
-active: false
-title: "Gruen Laboratory"
-subtitle: "Unravelling the genetics of reading"
+active: true
+title: "Research"
+subtitle: ""
 design:
   background:
-    image: heros/bike_group.color.jpeg
+    image: heros/microscopes.jpg
     image_darken: 0.5
     image_parallax: false
     image_position: center
@@ -19,8 +18,6 @@ design:
     image_blur: 3px
     text_color_light: true
 advanced:
-  css_style: "height: 100vh;" #56.25vw;"
-  css_class:
+  css_style:
+  css_class: "hero"
 ---
-
-{{< button text="Learn more" url="#about-us">}}
